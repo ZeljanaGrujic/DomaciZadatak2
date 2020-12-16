@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JUST DANCE plesni studio</title>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="logo"><img src="img/logo.png" style="width:100px;height:100px;"></div>
+        <div class="menu">
+            <ul>
+                <li><a class="active" href="#">Početna stranica</a></li>
+                <li><a href="vrstePlesa.html">Vrste plesa</a></li>
+                <li><a href="oNama.html">O nama</a></li>
+                <li><button class="button" onclick="openWin()" style="width: 100px; height: 30px">Registruj se!</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="headline">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="headline-text">
+            <div class="headline-text-item">
+                <div id="promenaTeksta" style="color:rgb(240, 26, 26); font-size: 3em;">
+                    <h4>Pridruži se našoj ekipi!</h4>
+                </div>
+                <br>
+                <div id="promenaTeksta" style="color: whitesmoke; font-weight: normal; font-size: 1.1em;">Prijavi se na bilo koji kurs već danas i ostvari popust</div>
+                <form id="form" onsubmit="return checkInp()">
+                    <div class="contactForm">
+                        <div class="item">
+                            <input type="text" id="adress" name="adresa" required placeholder="Unesite vaš e-mail ...">
+                            <button  class="button" style="color: white" type="submit">Prijavi se</button>
+                        </div>
+                    </div>
+                </form>
+                  
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class='some-page-wrapper'>
+        <div class="title" style="color:rgb(240, 26, 26); font-weight: normal;">
+            <h1> <i> <b> Upoznajte se sa našim instruktorima:</b></i></h1>
+        </div>
+            <div class='row'>
+              <div class='column'>
+                <div class='column2'>
+                        <br>
+                        <br>
+                    <h2>MILENA ĐERIĆ</h2>
+                    Milena se već dugi niz godina bavi HIP-HOP i STREET plesom. Bićete oduševljeni njenim umećem, kreativnošću i osećajem za ritam. Milena je pozitivna, obazriva, pružiće Vam podršku i preneti svo potrebno znanje, bez obzira na Vaše godine!
+                </div>
+              </div>
+              <div class='column'>
+                <div class='column1'>
+                    <img class='tv' src="img/MILENA.jpg">
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class='row'>
+                    <div class='column'>
+                      <div class='column2'>
+                            <img class='tv' src="img/SONJA (2).png "">
+                      </div>
+                    </div>
+                    <div class='column'>
+                      <div class='column1'>
+                            <br>
+                            <br>
+                            <h2>SONJA ŽIVKOVIĆ</h2>
+                           Prefinjena, ponosna, elegantna, da govorimo o našoj Sonji! Sonja će Vas uvesti u svet baleta, jedan od nalepših plesnih pravaca. Pokazaće Vam kako na pravi način da se držite, kako da budete graciozni i nežni. Dokazaće Vam da se baletom može baviti svako ko to zaista želi!
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class='row'>
+                        <div class='column'>
+                          <div class='column2'>
+                                  <br>
+                                  <br>
+                              <h2>ŽELJANA GRUJIĆ</h2>
+                             Ukoliko Vas interesuje klasični ples kao na primer Valcer, onda se obratiti Željani. Ovaj ples je svima nama jako dobro poznat, odiše gracioznošću, a dok ga budete učili, zasigurno će Vas podsetiti na period kraljeva i kraljica. Imaćete osećaj kao da ste na dvoru! A Željana je tu da Vam pažljivo pokaže svaki korak!
+                          </div>
+                        </div>
+                        <div class='column'>
+                          <div class='column1'>
+                              <img class='tv' src="img/ZELJANA.jpg">
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <br>
+          <div class="footer">
+                <p>&copy; JUST DANCE plesni studio</p>   
+            </div>  
+</body>
+<script type="text/javascript">
+    function openWin() {
+        myWindow = window.open("registracija.html", "myWindow", "width=1500,height=1000");
+    }
+    $('#form').validate({
+        rules: {
+            adresa: {
+                required: true,
+                email: true
+            },
+        },
+        messages: {
+            adresa: {
+                required: "Unesite Vaš e-mail!",
+                email: "E-mail mora biti validan!"
+            },
+        }
+    });
+</script>
+</script>
+
+</html>

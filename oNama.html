@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JUST DANCE plesni studio</title>
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"
+    type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="top-nav">
+    <div class="logo"><img src="img/logo.png" style="width:100px;height:100px;"></div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Početna stranica</a></li>
+        <li><a href="vrstePlesa.html">Vrste plesa</a></li>
+        <li><a class="active" href="#">O nama</a></li>
+        <li><button class="button" onclick="openWin()" style="width: 100px; height: 30px">Registruj se!</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="headline" style="display:block; overflow:auto;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main-content">
+      <div class="main">
+        <button type="button" class="collapsible">Gde možete pronaći naš studio?</button>
+        <div class="content">
+          <p>Voždovac, Vojvode Stepe 22 / Novi Beograd, Bulevar umetnosti 5</p>
+        </div>
+        <button type="button" class="collapsible">Radno vreme</button>
+        <div class="content">
+          <p>Ponedeljak – Petak: 10h – 21:00h</p>
+        </div>
+        <button type="button" class="collapsible">Kako izgleda trenirati sa nama?</button>
+        <div class="content">
+          <!-- <a href="https://www.youtube.com/watch?v=vrPbGoH54Og" target="_blank">Pogledajte ovde </a> -->
+          <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vrPbGoH54Og" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button type="button" class="collapsible">Kontakt telefon</button>
+        <div class="content">
+          <p>Vojvode Stepe 22: 067 38 10 999 / Bulevar umetnosti 5: 067 38 20 999</p>
+        </div>
+        <button type="button" class="collapsible">E-mail</button>
+        <div class="content">
+          <p>justDance@gmail.com</p>
+        </div>
+        <button type="button" class="collapsible" onclick="document.getElementById('date').innerHTML=Date()">Trenutno
+          vreme</button>
+        <div class="content">
+          <p id="date"></p>
+        </div>
+        <button type="button" class="collapsible" onclick="document.getElementById('date').innerHTML=Date()">Samo jedan srećan broj dobija kurs besplatno, da li je tvoj broj srećan broj?</button>
+        <div class="content">
+          <p id="srecanBroj"></p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+  <div class="footer">
+    <p>&copy; JUST DANCE plesni studio</p>
+  </div>
+</body>
+<script type="text/javascript">
+  function openWin() {
+    myWindow = window.open("registracija.html", "myWindow", "width=1500,height=1000");
+  }
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  $(document).ready(function () {
+    var broj = document.getElementById("srecanBroj");
+    broj.innerHTML = 'Da li je tvoj broj srećan broj : BROJ  ' + Math.floor(Math.random() * 6 + 1);
+  });
+</script>
+
+</html>

@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:rgb(240, 26, 26);
+}
+
+#promenaTeksta{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.top-nav{
+    background-color:transparent;
+    display: flex;
+    width: 100%;
+    height: 0px;
+    top: 0px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    zoom: 1.5;
+}
+
+  .top-nav a.active {
+    color: rgb(255, 255, 255);  
+}
+
+.logo{
+    flex: 1;
+    padding: 14px 0px 0px 20px;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.menu{
+    flex:3;  
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    flex-flow: row wrap;
+}
+
+.menu ul li{
+    flex: 1;
+    text-align: center;  
+}
+
+.menu ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;      
+}
+
+.headline{
+    background-image: url("plesaci-5_1_MD.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+}
+
+.headline-text {
+    display: flex;
+    padding: 10% 0;
+}
+
+.headline-text-item{
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.headline-text-item h4{
+    background-color: rgba(255, 180, 180, 0.719);
+    font-size: 100%;
+    margin-bottom: 4%;
+}
+
+/* .headline-text-item h5{
+    background-color: rgba(255, 180, 180, 0.719);
+    font-size: 0.75em;
+    margin-top: 30px;
+} */
+
+.headline-text-item p{
+    font-size: 18px;
+}
+
+.main-content{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5% 0;
+    /*display:block; 
+    overflow:auto;*/
+}
+
+.main{
+    flex: 1;
+    padding: 3%;
+    /* margin: 70px; */
+    text-align: center;
+    color: #ffffff;
+}
+
+#button{
+    background-color: rgb(27, 114, 30);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 95%;
+    border-radius: 50%;
+    border: #000000;
+}
+
+.button{
+    background-color: rgb(223, 56, 56);  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 95%;
+    border-radius: 5%;
+    color: #ffffff;
+    border: #ffffff;
+}
+
+.hh:hover{
+    zoom: 1.1;
+}
+
+@media all and (max-width:500px){
+    .top-nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul li{
+        padding: 0;
+    }
+    .headline-text-item{
+        width: 25%;
+    }
+    .headline-text-item h2{
+        margin-top: 30%;
+        font-size: 25%;
+    }
+    .headline-text-item h4{
+        margin-top: 20%;
+        font-size: 25%;
+    }
+    .button{
+        font-size: 10%;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    .google-maps {
+        width: 75% !important;
+        height: 75% !important;
+    }
+    
+    .parallax {
+        background-image: url("img/logo.png") !important;
+    }
+}
+
+@media all and (max-width:800px){
+    .top-nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .menu ul li{
+        padding: 0px;
+    }
+    .headline-text-item{
+        width: 50%;
+    }
+    .headline-text-item h2{
+        margin-top: 20%;
+        font-size: 50%;
+    }
+    .headline-text-item h4{
+        margin-top: 20%;
+        font-size: 50%;
+    }
+    .button{
+        font-size: 75%;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+ 
+    .parallax {
+        /* The image used */
+        background-image: url("img/logo.png") !important;
+    }
+}
+  
+body{
+    background: #000000;
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue",
+    sans-serif;
+}
+  
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm{
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;  
+}
+
+.item h2 {
+    background-color: rgba(255, 132, 132, 0.671) ;
+    color: red;
+    font-size: 40px;
+    margin-bottom: 18px; 
+}
+
+.radio-inline {
+    background-color:  rgba(255, 132, 132, 0.671);
+    color: #000000;
+}
+
+.item input[type="text"]{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1px;
+    width: 30%;
+    color: #000000;
+}
+
+.item input[type="password"]{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1px;
+    width: 30%;
+    color: #000000;
+}
+
+.item input[type="email"]{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1px;
+    width: 30%;
+    color: #000000;
+}
+
+.item textarea{
+    border-radius: 10px;
+    height: 100px;
+    padding: 15px;
+    width: 30%;
+    color: #000000;
+}
+
+.item button{
+    height: 30px;
+    width: 15%;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+
+.icon {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 5px solid (245, 60, 60);
+    border-radius: 100%;
+}
+  
+
+
+.some-page-wrapper {
+    margin: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .column2 {
+    height: 40%;
+    text-align: center;
+    margin: 0 0 5% 5%;
+  }
+  
+  .column1 {
+    height: 40%;
+    text-align: center;
+    margin: 0 5% 5% 0;
+  }
+
+  .column1 img{
+      height: 50%;
+      align-self: center;
+  }
+
+  .column2 img{
+      height: 50%;
+      align-self: center;
+  }
+   .title{
+       height: 100%;
+        text-align: center;
+        margin-bottom: 8%;
+   }
+
+
+  @media screen and (min-width: 800px) {
+
+    .column {
+      flex: 1
+    }
+
+    .double-column {
+      flex: 2
+    }
+
+    .tv{
+        height: 200px;
+        width: 250px;
+    }
+
+    .title{
+        justify-content: center;
+    }
+  }
+  
+ .tv{
+    height: 200px; 
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .parallax {
+    background-image: url("plesaci-5_1_MD.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .collapsible {
+    background-color: rgb(240, 26, 26);
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .iframe-container{
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+  }
+  .iframe-container iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .active, .collapsible:hover {
+    background-color:rgba(255, 132, 132, 0.76)
+  }
+  
+  .content {
+    /* margin-left: 127px; */
+    margin-left: 10%;
+    width: 80%;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0)  ;
+  }
